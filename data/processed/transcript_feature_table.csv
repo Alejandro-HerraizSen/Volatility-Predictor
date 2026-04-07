@@ -1,0 +1,4 @@
+transcript_file,total_segments,positive_segments,neutral_segments,negative_segments,total_confidence_keywords,total_risk_keywords,ceo_segments,ceo_positive_segments,ceo_negative_segments,ceo_avg_model_confidence,ceo_confidence_keywords,ceo_risk_keywords,cfo_segments,cfo_positive_segments,cfo_negative_segments,cfo_avg_model_confidence,cfo_confidence_keywords,cfo_risk_keywords,analyst_segments,analyst_positive_segments,analyst_negative_segments,analyst_avg_model_confidence,analyst_confidence_keywords,analyst_risk_keywords,unknown_segments,unknown_positive_segments,unknown_negative_segments,unknown_avg_model_confidence,unknown_confidence_keywords,unknown_risk_keywords
+aapl_q1.txt,6,3,1,2,7,11,2,1,1,0.9994795322418213,4,4,2,2,0,1.0,3,1,2,0,1,0.9871653914451599,0,6,0,0,0,0.0,0,0
+msft_q1.txt,5,4,0,1,8,5,2,2,0,1.0,5,3,2,2,0,1.0,3,0,1,0,1,0.9999135732650757,0,2,0,0,0,0.0,0,0
+nvda_q1.txt,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0.0,0,0,0,0,0,0.0,0,0,0,0,0,0.0,0,0
