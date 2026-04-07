@@ -1,0 +1,4 @@
+speaker,segments,positive_segments,negative_segments,avg_model_confidence,confidence_keywords,risk_keywords
+Analyst,2,0,1,0.9871653914451599,0,6
+CEO,2,1,1,0.9994795322418213,4,4
+CFO,2,2,0,1.0,3,1

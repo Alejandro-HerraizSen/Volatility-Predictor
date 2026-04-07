@@ -1,0 +1,7 @@
+segment_id,speaker,text,sentiment,sentiment_confidence,confidence_keyword_count,risk_keyword_count
+1,CEO,We delivered strong revenue growth this quarter and remain confident in our strategy.,positive,1.0,3,0
+2,CFO,Margin improved and we are raising guidance for the full year.,positive,1.0,2,0
+3,Analyst,What about next quarter risks and macroeconomic uncertainty?,negative,0.9889439344406128,0,5
+4,CEO,We see stable demand but inflation and supply chain pressure remain challenges.,negative,0.9989590644836426,1,4
+5,Analyst,How should we think about margins if inflation continues?,neutral,0.985386848449707,0,1
+6,CFO,We believe we are well positioned to manage cost pressures going forward.,positive,1.0,1,1
