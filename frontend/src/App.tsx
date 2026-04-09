@@ -28,7 +28,7 @@ export default function App() {
               V
             </div>
             <div>
-              <span className="text-white font-semibold text-base tracking-tight">VolatilityIQ</span>
+              <span className="text-white font-semibold text-base tracking-tight">Earnings Call Risk & Confidence Analyzer</span>
               <span className="ml-2 text-[10px] text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded-full px-2 py-0.5 font-medium">
                 BETA
               </span>
