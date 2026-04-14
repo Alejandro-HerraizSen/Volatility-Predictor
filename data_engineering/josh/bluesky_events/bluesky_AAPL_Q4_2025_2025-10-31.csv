@@ -1,0 +1,90 @@
+event_id,ticker,company_name,created_at,author_handle,text_raw,query_used,post_uri,has_cashtag,has_plain_ticker,has_company,has_earnings_term,match_score,relevance_label
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-12T17:14:31.389756Z,epsteinweb.bsky.social,"Parts 1-2/2 — EFTA02529391.jpg
+#epsteinweb #efta02529391
+https://epsteinweb.org
+Available in the iOS app store now!
+https://apps.apple.com/us/app/epstein-web/id6758880661",AAPL earnings,at://did:plc:ndjyym3ihrqu3g25gdztefrv/app.bsky.feed.post/3mjctzxrbos2a,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-12T04:19:42.125Z,insiderdashboard.bsky.social,"$NVDA reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mjbiqhy6qi2k,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-12T04:17:33.040Z,insiderdashboard.bsky.social,"$MSFT reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mjbimmwtpj27,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-12T04:16:58.991Z,insiderdashboard.bsky.social,"$AAPL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mjbilmfr6o2s,True,True,False,True,3,high
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-12T04:16:41.766Z,insiderdashboard.bsky.social,"$AMZN reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mjbil3yni22e,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-12T04:16:29.894Z,insiderdashboard.bsky.social,"$GOOGL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mjbikqoeoe2m,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-11T03:44:37.160Z,insiderdashboard.bsky.social,"$GOOGL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj6wct4vd62w,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-11T03:44:06.085Z,insiderdashboard.bsky.social,"$MSFT reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj6wbvelpq27,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-11T03:44:00.543Z,insiderdashboard.bsky.social,"$AMZN reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj6wbq3iia2a,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-11T03:43:53.670Z,insiderdashboard.bsky.social,"$NVDA reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj6wbjjply2w,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-11T03:43:49.162Z,insiderdashboard.bsky.social,"$AAPL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj6wbfdzbt25,True,True,False,True,3,high
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T15:41:15.073Z,insiderdashboard.bsky.social,"$MSFT reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj5nvdkcu72h,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T15:40:20.307Z,insiderdashboard.bsky.social,"$AMZN reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj5ntpdaac2r,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T15:40:07.571Z,insiderdashboard.bsky.social,"$AAPL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj5ntd6vs72j,True,True,False,True,3,high
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T13:18:37.241471Z,epsteinweb.bsky.social,"Parts 1-2/2 — EFTA02466826.jpg
+#epsteinweb #efta02466826
+https://epsteinweb.org
+Available in the iOS app store now!
+https://apps.apple.com/us/app/epstein-web/id6758880661",AAPL earnings,at://did:plc:ndjyym3ihrqu3g25gdztefrv/app.bsky.feed.post/3mj5fwcimgu2o,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T13:04:39.735269Z,epsteinweb.bsky.social,"Parts 1-2/2 — EFTA02466529.jpg
+#epsteinweb #efta02466529
+https://epsteinweb.org
+Available in the iOS app store now!
+https://apps.apple.com/us/app/epstein-web/id6758880661",AAPL earnings,at://did:plc:ndjyym3ihrqu3g25gdztefrv/app.bsky.feed.post/3mj5f5do5pa2v,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T04:15:15.945Z,insiderdashboard.bsky.social,"$AAPL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj4hkpb5jt2t,True,True,False,True,3,high
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T04:14:46.800Z,insiderdashboard.bsky.social,"$MSFT reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj4hjtouk525,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T04:14:30.399Z,insiderdashboard.bsky.social,"$NVDA reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj4hjdtf3j2d,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T04:14:18.938Z,insiderdashboard.bsky.social,"$GOOGL reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj4hiytxmk2w,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-10T04:13:57.430Z,insiderdashboard.bsky.social,"$AMZN reported earnings today, this is their revenue breakdown compared to competitors.
+
+See more at https://www.insiderdashboard.com/search?query=AAPL",AAPL earnings,at://did:plc:ap56m7pvnz4lnrtaguxiuawm/app.bsky.feed.post/3mj4hieezlr2x,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-09T08:26:31.151Z,castify.bsky.social,"Apple (AAPL) Q1 2026 earnings call is now available as a free podcast.
+
+Listen to Tim Cook and the team break down quarterly results — right in your podcast app.
+
+casti.fyi/listen/apple-inc-earnings-call",AAPL earnings,at://did:plc:iusl4b3m2mpmzgz5wg45xvnn/app.bsky.feed.post/3mj2f52iegv2g,False,True,True,True,3,high
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-07T19:07:05.333872Z,epsteinweb.bsky.social,"EFTA02391393.jpg
+#epsteinweb #efta02391393
+https://epsteinweb.org
+Available in the iOS app store now!
+https://apps.apple.com/us/app/epstein-web/id6758880661",AAPL earnings,at://did:plc:ndjyym3ihrqu3g25gdztefrv/app.bsky.feed.post/3miwhynk5w226,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-07T18:28:54.424436Z,epsteinweb.bsky.social,"EFTA02390745.jpg
+#epsteinweb #efta02390745
+https://epsteinweb.org
+Available in the iOS app store now!
+https://apps.apple.com/us/app/epstein-web/id6758880661",AAPL earnings,at://did:plc:ndjyym3ihrqu3g25gdztefrv/app.bsky.feed.post/3miwfuer3lv2m,False,False,False,True,1,medium
+AAPL_Q4_2025_2025-10-31,AAPL,Apple,2026-04-07T18:00:03.123930Z,fundspec.bsky.social,"BULLISH $AAPL
+Apple Option Alert: Sep 18 $265 Calls at the Ask: 123 vs 5762 OI; Earnings 4/30 After Close 
+https://optionssentimentscreener.com/AAPL
+Monitor Unusual Options Activity for free on the Options Sentiment Screener App on the AppStore or PlayStore
+",AAPL earnings,at://did:plc:5i7m7wpf7lstzfau43thfeff/app.bsky.feed.post/3miwearkxlo25,True,True,True,True,4,high
