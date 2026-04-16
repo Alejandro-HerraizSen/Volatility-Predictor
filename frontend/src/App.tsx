@@ -1,87 +1,72 @@
+import { useState, useEffect } from 'react'
 import './index.css'
 import SentimentPanel from './components/SentimentPanel'
 import OptionChain from './components/OptionChain'
 import RiskPredictor from './components/RiskPredictor'
 
-const stats = [
-  { label: 'Underlying', value: '$187.42', sub: 'AAPL', color: 'text-white' },
-  { label: 'Change', value: '-2.14%', sub: '↓ $4.09', color: 'text-red-400' },
-  { label: 'IV Rank', value: '73.4', sub: '30-day', color: 'text-amber-400' },
-  { label: 'Put/Call Ratio', value: '1.24', sub: 'Bearish skew', color: 'text-red-400' },
-  { label: 'Avg Sentiment', value: '62.1%', sub: 'Bullish', color: 'text-emerald-400' },
-  { label: 'VIX', value: '21.8', sub: 'Elevated', color: 'text-amber-400' },
-]
+function useClock() {
+  const [time, setTime] = useState(new Date())
+  useEffect(() => {
+    const id = setInterval(() => setTime(new Date()), 1000)
+    return () => clearInterval(id)
+  }, [])
+  return time
+}
 
 export default function App() {
+  const now = useClock()
+  const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+  const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+
   return (
-    <div className="min-h-screen bg-[#06080f] text-[#f1f5f9]">
+    <div className="h-screen flex flex-col bg-[#06080f] text-[#f1f5f9] overflow-hidden">
 
       {/* Navbar */}
-      <header className="relative border-b border-white/[0.06] bg-[#06080f]/90 backdrop-blur-sm sticky top-0 z-50">
-        {/* Gradient accent line at top */}
+      <header className="shrink-0 relative border-b border-white/[0.06] bg-[#06080f] z-50">
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-60" />
-
-        <div className="max-w-[1440px] mx-auto px-6 py-3.5 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-blue-500/20">
-              V
-            </div>
-            <div>
-              <span className="text-white font-semibold text-base tracking-tight">Earnings Call Risk & Confidence Analyzer</span>
-              <span className="ml-2 text-[10px] text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded-full px-2 py-0.5 font-medium">
-                BETA
-              </span>
-            </div>
+        <div className="px-4 py-2.5 flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <span className="text-white font-bold text-base tracking-tight bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+              Earnings Call Risk & Confidence Analyzer
+            </span>
           </div>
 
-          {/* Center — active earnings call */}
-          <div className="flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-lg px-4 py-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-slate-400 text-sm">Live:</span>
-            <span className="text-white text-sm font-medium">AAPL Q2 2026 Earnings Call</span>
-          </div>
-
-          {/* Right — market status */}
-          <div className="flex items-center gap-5 text-sm text-slate-500">
-            <span>NYSE</span>
+          <div className="flex items-center gap-4 text-xs">
+            <span className="text-slate-600 hidden lg:block">
+              Sources: <span className="text-slate-400">Bluesky · SEC Transcripts · Options Markets</span>
+            </span>
             <div className="flex items-center gap-1.5 text-emerald-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Market Open
             </div>
-            <span className="text-slate-600">Apr 9, 2026 · 10:07 AM ET</span>
+            <span className="text-slate-600 font-mono">{dateStr} · {timeStr} ET</span>
           </div>
         </div>
       </header>
 
-      {/* Stats bar */}
-      <div className="border-b border-white/[0.06] bg-[#080c15]">
-        <div className="max-w-[1440px] mx-auto px-6 py-2.5 flex items-center gap-8 overflow-x-auto">
-          {stats.map((s) => (
-            <div key={s.label} className="flex items-center gap-3 shrink-0">
-              <div>
-                <p className="text-[10px] text-slate-500 uppercase tracking-wider leading-none mb-1">{s.label}</p>
-                <p className={`text-sm font-semibold ${s.color} leading-none`}>{s.value}</p>
-              </div>
-              <p className="text-xs text-slate-600">{s.sub}</p>
-              <div className="w-px h-6 bg-white/[0.06]" />
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* Body — TradingView style */}
+      <div className="flex-1 flex overflow-hidden">
 
-      {/* Main grid */}
-      <main className="max-w-[1440px] mx-auto p-6 grid grid-cols-1 xl:grid-cols-3 gap-5">
-        <div className="xl:col-span-2">
-          <SentimentPanel />
+        {/* Main area — option chain top, sentiment feed bottom */}
+        <div className="flex-1 flex flex-col overflow-hidden">
+
+          {/* Top: Option chain — takes most of the height */}
+          <div className="flex-1 overflow-hidden p-3 pb-1.5">
+            <OptionChain />
+          </div>
+
+          {/* Bottom: Sentiment feed — fixed height strip */}
+          <div className="h-[280px] shrink-0 p-3 pt-1.5">
+            <SentimentPanel />
+          </div>
         </div>
-        <div>
+
+        {/* Right sidebar — Risk predictor */}
+        <div className="w-[300px] shrink-0 border-l border-white/[0.06] overflow-y-auto">
           <RiskPredictor />
         </div>
-        <div className="xl:col-span-3">
-          <OptionChain />
-        </div>
-      </main>
+
+      </div>
     </div>
   )
 }

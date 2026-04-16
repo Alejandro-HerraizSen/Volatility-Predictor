@@ -38,7 +38,7 @@ export default function RiskPredictor() {
   const risk = result ? getRiskLabel(result.riskScore) : null
 
   return (
-    <div className="bg-[#0d1526] border border-white/[0.07] rounded-2xl overflow-hidden flex flex-col">
+    <div className="bg-[#0d1526] border border-white/[0.07] rounded-2xl overflow-hidden flex flex-col h-full overflow-y-auto">
       {/* Header */}
       <div className="px-5 py-4 border-b border-white/[0.06] flex items-center gap-2">
         <div className="w-5 h-5 rounded bg-blue-500/20 flex items-center justify-center">
