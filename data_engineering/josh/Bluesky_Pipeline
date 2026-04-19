@@ -1,1 +1,89 @@
+# Bluesky Data Collection Pipeline
 
+This part of the project collects Bluesky posts related to earnings events and prepares them for ML use.
+
+## Files
+
+### `src/collect/bluesky_collect_simple.py`
+This script collects Bluesky posts for **one earnings event**.
+
+It:
+- logs into Bluesky using environment variables
+- searches posts using the query: `<TICKER> earnings`
+- scores posts for relevance using ticker, company name, and earnings-related terms
+- keeps only medium/high relevance posts
+- saves the results to a CSV file
+
+**Output example:**
+`data/processed/bluesky_<event_id>.csv`
+
+---
+
+### `src/collect/run_bluesky_batch.py`
+This script runs the Bluesky scraper for **multiple events**.
+
+It:
+- reads the input file `data/processed/bluesky_event_input_50.csv`
+- takes each event’s `event_id`, `ticker`, and `company_name`
+- calls `bluesky_collect_simple.py` for each row
+
+This is the batch runner for the full Bluesky collection process.
+
+---
+
+### `src/process/combine_bluesky_outputs.py`
+This script combines all individual Bluesky event CSV files into one dataset.
+
+**Output example:**
+`data/processed/bluesky_posts_combined.csv`
+
+---
+
+### `src/process/dedupe_bluesky_posts.py`
+This script removes duplicate Bluesky posts from the combined dataset.
+
+**Output example:**
+`data/processed/bluesky_posts_combined_deduped.csv`
+
+---
+
+### `src/process/create_bluesky_ml_export.py`
+This script creates the final ML-ready Bluesky export.
+
+It keeps the cleaned and relevant columns needed for downstream modeling.
+
+**Output example:**
+`data/processed/bluesky_posts_ml_ready.csv`
+
+---
+
+## Pipeline Flow
+
+1. `bluesky_collect_simple.py` → collect posts for one event  
+2. `run_bluesky_batch.py` → run collection for all events  
+3. `combine_bluesky_outputs.py` → combine all event files  
+4. `dedupe_bluesky_posts.py` → remove duplicate posts  
+5. `create_bluesky_ml_export.py` → build final ML-ready dataset  
+
+---
+
+## Input File
+
+The batch process uses:
+
+`data/processed/bluesky_event_input_50.csv`
+
+This file contains:
+- `event_id`
+- `ticker`
+- `company_name`
+
+---
+
+## Final Output
+
+The final dataset for the ML team is:
+
+`data/processed/bluesky_posts_ml_ready.csv`
+
+This contains earnings-related Bluesky posts matched to target events and cleaned for downstream analysis.
